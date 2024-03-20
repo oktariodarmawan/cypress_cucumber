@@ -11,5 +11,8 @@
   "repository": {
     "type": "git",
     "url": "git@github.com:oktariodarmawan/cypress_cucumber.git"
-}
+  },
+  "dependencies": {
+    "cypress": "^13.7.0"
+  }
 }
