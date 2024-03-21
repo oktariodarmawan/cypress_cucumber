@@ -13,6 +13,7 @@
     "url": "git@github.com:oktariodarmawan/cypress_cucumber.git"
   },
   "dependencies": {
-    "cypress": "^13.7.0"
+    "cypress": "^13.7.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }

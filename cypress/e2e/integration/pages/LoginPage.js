@@ -11,6 +11,9 @@ export default class LoginPage{
 
     loginButton = '.v-app-bar > .v-toolbar__content > [target="_blank"] > .v-btn__content'
 
+    checkbox_TNC = ':nth-child(4) > .v-input__control > .v-input__slot > .v-input--selection-controls__input > .v-input--selection-controls__ripple'
+
+    loginButtonSubmit = '[style="color: rgb(255, 255, 255); background-color: rgb(23, 40, 84); border-color: rgb(23, 40, 84);"] > .v-btn__content > span'
     
 
      // Create independent methods to do actions on elements
@@ -38,9 +41,16 @@ export default class LoginPage{
         cy.get(this.checkbox_punya_akun).click()
      }
 
+     clickCheckBoxTNC(){
+        cy.get(this.checkbox_TNC).click()
+     }
+
       clickLogin(){
     
         cy.get(this.loginButton).click();
-    
+      }
+
+      loginButton_Submit(){
+        cy.get(this.loginButtonSubmit).click();
       }
 }
